@@ -11,9 +11,19 @@ import { AppComponent } from './app.component';
 // import landing component
 import { LandingComponent } from './pages/landing/landing.component';
 
-// shared components, directives, guards, interceptor, pipe, services
+// shared components, directives, guards, interceptor, pipe, services, helper
 import { CookieService } from './shared/services/cookie.service';
 import { PlatformService } from './shared/services/platform.service';
+import { EndpointHelper } from './shared/helper/endpoint.helper';
+
+// shared header
+import { HeaderComponent } from './shared/components/header/header.component';
+
+// shared git repos component
+import { GitRepositoriesComponent } from './shared/components/git-repositories/git-repositories.component';
+
+// shared instagram photos component
+import { InstagramPhotosComponent } from './shared/components/instagram-photos/instagram-photos.component';
 
 /*
 ** -----------------------------------------------------------
@@ -28,12 +38,18 @@ export const RouterList = [
 
 export const DeclarationList:any[] = [
 	AppComponent,
-	LandingComponent
+	LandingComponent,
+
+	// Shared components
+	HeaderComponent,
+	GitRepositoriesComponent,
+	InstagramPhotosComponent
 ];
 
 export const ProviderList:any[] = [
 	CookieService,
-	PlatformService
+	PlatformService,
+	EndpointHelper
 ];
 
 export const AppBootstrap:any[] = [AppComponent];

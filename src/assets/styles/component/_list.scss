@@ -1,0 +1,68 @@
+@import '../main/_constant';
+
+ul.list {
+	list-style-type: none;
+	display: block;
+	padding-left: 0;
+	position: relative;
+
+	&.list--inline {
+		width: 100%;
+
+		li {
+			display: inline-block;
+		}
+
+		&.list--20 {			
+			li {
+				width: 20%;
+			}
+		}
+
+		&.list--25 {
+			li {
+				width: 24%;
+			}
+		}
+	}
+
+	&.list--block {
+		
+		li {
+			display: block;
+			margin-bottom: $margin_px_nm;
+		}
+	}
+
+	&.list--content {
+		padding-left: $padding_px_xl;
+		display: list-item;
+
+		li {
+			display: list-item;
+			margin-bottom: $margin_px_nm;
+			line-height: 1.85em;
+			list-style-type: disc;
+		}
+	}
+
+	&.list--underscore {
+
+		li {
+			width: 29.6%;
+			text-align: center;
+			display: inline-block;
+			padding: $padding_px_nm 0;
+			margin: $margin_px_md $margin_px_lg $margin_px_md 0;
+			font-weight: bold;
+			border-bottom: 2px dashed rgba(22,22,22,0.4);
+			transition: all .3s ease-in-out;
+			user-select: none;
+
+			&:hover {
+				color: $color_base;
+				border-bottom: 2px solid $color_base;
+			}
+		}
+	}
+}

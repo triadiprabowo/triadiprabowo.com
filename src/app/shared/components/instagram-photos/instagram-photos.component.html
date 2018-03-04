@@ -1,0 +1,9 @@
+<div class="wrapper__gallery">	
+	<div class="gallery__block" *ngFor="let list of galleries">
+		<img [src]="list.thumbnail_src" />
+
+		<div class="gallery__description">
+			<p *ngFor="let desc of list.edge_media_to_caption.edges">{{desc.node.text}}</p>
+		</div>
+	</div>
+</div>

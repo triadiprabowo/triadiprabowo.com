@@ -24,3 +24,14 @@
 // 1. import main styles
 @import './assets/styles/main/_font';
 @import './assets/styles/main/_base';
+
+// 2. import components
+@import './assets/styles/component/_wrapper';
+@import './assets/styles/component/_article';
+@import './assets/styles/component/_loader';
+@import './assets/styles/component/_list';
+@import './assets/styles/component/_icon';
+@import './assets/styles/component/_animation';
+
+// 3. import layout
+@import './assets/styles/layout/_header';

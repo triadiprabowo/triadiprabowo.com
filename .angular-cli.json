@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "angular5-universal-starter"
+    "name": "triadiprabowo-front"
   },
   "apps": [
     {
@@ -19,10 +19,15 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.scss",
-        "../node_modules/@angular/material/prebuilt-themes/indigo-pink.css"
+        "../node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+        "assets/vendor/bootstrap-4/css/bootstrap.min.css",
+        "assets/vendor/font-awesome/css/fontawesome-all.min.css",
+        "styles.scss"
       ],
-      "scripts": [],
+      "scripts": [
+        "assets/vendor/jquery/jquery-3.2.1.min.js",
+        "assets/vendor/bootstrap-4/js/bootstrap.min.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
@@ -45,10 +50,15 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.scss",
-        "../node_modules/@angular/material/prebuilt-themes/indigo-pink.css"
+        "../node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+        "assets/vendor/bootstrap-4/css/bootstrap.min.css",
+        "assets/vendor/font-awesome/css/fontawesome-all.min.css",
+        "styles.scss"
       ],
-      "scripts": [],
+      "scripts": [
+        "assets/vendor/jquery/jquery-3.2.1.min.js",
+        "assets/vendor/bootstrap-4/js/bootstrap.min.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",

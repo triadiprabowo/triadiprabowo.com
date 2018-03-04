@@ -1,0 +1,27 @@
+<div class="wrapper__card">
+	<div class="row">
+		<div class="col-12 col-sm-12" *ngIf="repos.length == 0">
+			<div class="spinner">
+				<div class="rect1"></div>
+				<div class="rect2"></div>
+				<div class="rect3"></div>
+				<div class="rect4"></div>
+				<div class="rect5"></div>
+			</div>
+		</div>
+
+		<div class="col-4 col-sm-4" *ngFor="let list of repos">
+			<div class="card">
+				<div class="card-block">
+					<h4 class="card-title"><a [href]="list.html_url" target="_blank">{{list.name}}</a> <button class="btn btn-sm" [ngClass]="setBadge(list.language)">{{list.language}}</button></h4>
+					
+					<!-- <div class="card-badge">
+						<button class="btn btn-sm" [ngClass]="setBadge(list.language)">{{list.language}}</button>
+					</div> -->
+
+					<p class="card-text">{{list.description}}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

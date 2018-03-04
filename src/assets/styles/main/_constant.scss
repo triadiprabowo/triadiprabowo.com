@@ -1,6 +1,6 @@
 // font stacks
-$font_stack_content: 'RobotoLight', sans-serif;
-$font_stack_heading: 'RobotoBold', sans-serif;
+$font_stack_content: 'FontContent', sans-serif;
+$font_stack_heading: 'FontHeading', sans-serif;
 
 // font size
 $font_size_sm: 10px;
@@ -8,9 +8,16 @@ $font_size_nm: 12px;
 $font_size_md: 17px;
 $font_size_lg: 22px;
 
-$font_base_content: 14px;
+$font_base_content: 18px;
 $font_base_heading: 20px;
-$font_base_title: 15px;
+$font_base_title: 64px;
+$font_base_navigation: 20px;
+
+$font_base_card-title: 16px;
+$font_base_card-content: 14px;
+
+$font_base_icon-md: 28px;
+$font_base_icon-lg: 52px;
 
 // padding size
 $padding_px_xs: 5px;
@@ -38,3 +45,11 @@ $margin_pr_lg: 20%;
 
 // color constants
 $color_base_body: #f2f2f2;
+$color_base: #00b2e7;
+$color_base-darker: #0092c4;
+
+$color_base_content: #696969;
+$color_base_navigation: #696969;
+
+$color_white: #fff;
+$color_black: #000;

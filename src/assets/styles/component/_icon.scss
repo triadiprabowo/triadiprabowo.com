@@ -1,0 +1,9 @@
+@import '../main/_constant';
+
+.icon {
+	font-size: $font_base_icon-md;
+
+	&.icon--lg {
+		font-size: $font_base_icon-lg;
+	}
+}

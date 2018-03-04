@@ -1,0 +1,95 @@
+@import '../main/_constant';
+
+.article {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	margin-bottom: $margin_px_xl;
+	padding: $padding_px_lg;
+
+	.article__container {
+		position: relative;
+		display: block;
+		margin: 0 auto ($margin_px_xl + 10px);
+		overflow: hidden;
+	}
+	
+	.article__title {
+		font-size: $font_base_title;
+		margin-bottom: $margin_px_lg;
+	}
+
+	&.article--bg-laptop {
+		background-image: url('assets/bg-laptop.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+
+		.article__title {
+			color: $color_white;
+			text-shadow: 2px 1px 1px rgba(0,0,0,0.3);
+		}
+
+		.card {
+			background-color: rgba(255,255,255,0.95);
+			box-shadow: 0 0 3px 1px rgba(0,0,0,0.1);
+		}
+
+		.spinner > div {
+			background-color: $color_white;
+		}
+	}
+
+	&.article--bg-gradient {
+		background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+		background-size: 400% 400%;
+		-webkit-animation: Gradient 15s ease infinite;
+		-moz-animation: Gradient 15s ease infinite;
+		animation: Gradient 15s ease infinite;
+
+		.article__title {
+			color: $color_white;
+			text-shadow: 2px 1px 1px rgba(0,0,0,0.3);
+		}
+
+		pre, li {
+			color: $color_white;
+		}
+	}
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
